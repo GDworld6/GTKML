@@ -1,6 +1,207 @@
 <!DOCTYPE html>
 <html lang="en" class="overscroll-none h-full">
 <head>
+  <style>
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+}
+
+@keyframes growPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.animate-growPulse {
+  animation: growPulse 8.5s ease-in-out infinite;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7375rem;
+  color: #939393;
+  font-weight: 500;
+}
+
+header{
+  background-color: #FEFEFE;
+  border-bottom: #FEFEFE solid 1px;
+}
+
+#mspage{
+  border: #E5E7EB solid 0.5px;
+  padding: 9px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #mspage{
+    border: #E5E7EB solid 0.5px;
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+#whysection {
+  background: linear-gradient(to right, #355DFF 0%, #355DFF 15%, #AAF9FF 100%);
+}
+
+#mainhead{
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+}
+
+#sectionheader1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  #sectionheader1 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #sectionheader1 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #sectionheader1 {
+    font-size: 22px;
+  }
+}
+
+#introduction {
+  text-align: justify;
+  font-family: system-ui;
+  padding: 5px 5%;
+  font-weight: 450;
+  font-size: 30px;
+  line-height: 1.5;
+
+  background: linear-gradient(to right, #bababa 20%, #0e0e0e 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 640px) {
+  #introduction {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) {
+  #introduction {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+#navbar {
+  border:#E5E7EB solid 0.5px;
+  transition: border-color 0.3s ease;
+}
+
+#navbar.sticky-active {
+  border-color: transparent;
+}
+
+#navbar.sticky-overlap {
+  background-color: #F8F8F8;
+  backdrop-filter: none;
+}
+
+#services{
+  border:#F5F5F5 solid 1px;
+}
+
+footer, #pf {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: #ABA8A8;
+  font-weight: 300;
+}
+
+#whylist{
+  font-size: 15px;
+  color: white;
+  line-height: 1.8;
+  word-spacing: 2px;
+  text-align: left;
+}
+
+#ttloginform{
+  background-color: #FFFFFF;
+  width: 90%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #F9F9F9;
+}
+
+.input-field::placeholder {
+  color: #C0C0C0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+button[type="submit"][name="loginbutton"]{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  background-color: #940c0c;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  height: 55px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+button[type="submit"][name="loginbutton"]:hover {
+  transform: scale(1.07);
+}
+
+button[type="submit"][name="loginbutton"]:active {
+  transform: scale(1);
+  background-color: #000000;
+}
+
+#sectionheader3{
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1025px) {
+  #sectionheader3 {
+    text-align: left;
+    font-size: 30px;
+  }
+}
+</style>
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="vbAAjagy1xQ4tyFgQPXyolsrQq4MdRjOCcyvxHxSDh0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

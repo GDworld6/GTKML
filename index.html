@@ -282,23 +282,40 @@ button[type="submit"][name="loginbutton"]:active {
       <!-- Why section with bullet points -->
  
       <!-- Contact button - opens modal -->
-      <div class="flex justify-center w-full md:col-span-2 mb-10">
-        <div class="flex flex-col w-[95%] shadow-md shadow-neutral-200/40 min-h-[65px] bg-neutral-50  rounded-2xl border-2 border-neutral-50 md:col-span-2 p-10 mt-10" onclick="OpenContactModal()" tabindex="0">
-           <img src="Images/Rectangle 811.svg" alt="Back" class="h-100px] w-[100px] object-contain mb-10 mt-4 items-left justify-left ml-2 " />
-          <p class=" mb-5 ml-2 text-[0.9rem] text-[#7F7F7F]">Monalisa Liabunya   - writer</p>
-          <button
-            type="button"
-            class="text-[13px] shadow-md shadow-neutral-200/60 w-full h-[65px] bg-neutral-100 text-[#BBBBBB] rounded-[15px] font-bold border-gray-50 flex-shrink-0 overflow-hidden transition-all duration-200 hover:scale-105 hover:bg-[#F9F9F9] active:scale-100 active:black"
-          >
-            About me
-          </button>
-        </div>
-      </div>
+      <div class="flex justify-center w-full md:col-span-2 mb-5">
+  
+  <div class="flex flex-col w-[95%] shadow-md shadow-neutral-200/40 bg-neutral-50 rounded-2xl border-2 border-neutral-50 p-6 mt-10"
+       onclick="OpenContactModal()" tabindex="0">
+
+    <!-- TOP ROW (image + text side by side on small screens) -->
+    <div class="flex items-center gap-4">
+
+      <img src="Images/Rectangle 811.svg"
+           alt="Back"
+           class="w-14 h-14 sm:w-16 sm:h-16 object-cover rounded-xl" />
+
+      <p class="text-[0.9rem] text-[#7F7F7F] font-medium">
+        Monalisa Liabunya - writer
+      </p>
+
+    </div>
+
+    <!-- BUTTON (stays same place below) -->
+    <button
+      type="button"
+      class="mt-6 text-[13px] shadow-md shadow-neutral-200/60 w-full h-[65px] bg-neutral-100 text-[#BBBBBB] rounded-[15px] font-bold border-gray-50 transition-all duration-200 hover:scale-105 active:scale-100">
+
+      About me
+    </button>
+
+  </div>
+
+</div>
 
       
 
 
-      <div class="flex justify-center w-full md:col-span-2 mt-5 mb-10 md:mt-10 md:mb-10">
+      <div class="flex justify-center w-full md:col-span-2 mt-5 mb-5 md:mt-5 md:mb-5">
 
   <div id="sectionheader3"
        class="w-[90%] min-h-[100px] text-[18px] font-bold text-[#212121] bg-white rounded-xl text-left">

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="overscroll-none h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <!-- Tailwind CSS local CDN -->
+  <script src="tailwindcdn.js"></script>
+  
+
+  <!-- Lottie animation player -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-player.js" type="module"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="TTCSISstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Theme colors for various devices -->
+  <meta name="theme-color" content="#F8F8F8" />
+  <meta name="msapplication-navbutton-color" content="#F8F8F8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F8F8F8" />
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;" class="min-h-screen bg-white flex flex-col overscroll-none overflow-auto h-full">
+
+  <!-- Header section with logo and branding -->
+  <header class="bg-[#FEFEFE] h-[135px] p-4 flex flex-col items-start justify-start font-bold flex-shrink-0 border-b border-white">
+    <img src="Images/meteor-icons_pencil.svg" alt="Back" class="h-[45px] w-[45px] object-contain mb-1 mt-4 ml-4" />
+    
+  </header>
+
+  <!-- Main content area fills the remaining space -->
+  <main class="flex-grow p-4 flex">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-full">
+
+      <!-- Navigation bar, sticky and responsive
+      <div id="navbar" class="shadow flex flex-col h-[60px] bg-opacity-30 backdrop-blur p-2 items-center justify-center bg-[#F8F8F8] w-full md:w-[60%] lg:w-[40%] md:ml-8 mx-auto text-white font-semibold rounded-xl md:col-span-2 mt-5 sticky top-10 z-50">
+        <div class="flex items-center justify-between text-[#929292] w-full p-6 font-bold">
+          <a href="Index.html" id="mspage">My Services</a>
+          <a href="Projects.html" id="mspage1">Projects</a>
+          <a href="Aboutme.html" id="mspage2">About me</a>
+        </div>
+      </div> -->
+
+      <!-- Intro section: short welcome message -->
+      <!-- <div id="sectionheader3" class="flex p-5 md:mb-10 items-center text-justify justify-center min-h-[80px] bg-white rounded-xl md:col-span-2 mt-10">
+        <p class="md:w-[70%] text-[14px]">
+          Welcome to bluedunkalo's portfolio, this is the branding of my skills as a business information technology specialist focused on data handling.
+        </p>
+      </div> -->
+
+      <!-- Lottie animation intro -->
+      <!-- <div class="flex justify-center w-full md:col-span-2 mt-2">
+        <div id="brandintro" class="w-[60%] min-h-[70px] md:mb-40 bg-white font-bold rounded-xl border-2 border-[#ffffff] flex justify-center mr-5">
+  <dotlottie-player
+    src="https://lottie.host/30abea85-32d3-4e47-83f8-e9f027c77593/8Nmvywn8DJ.lottie"
+    style="width: 350px; height: 300px"
+    speed="1"
+    autoplay
+    loop
+  ></dotlottie-player>
+</div>
+
+      </div> -->
+
+      <!-- Section header with pulse animation -->
+      <!-- <div class="flex justify-center w-full md:col-span-2 mt-5 md:mb-20">
+        <div id="sectionheader3" class="w-[90%] min-h-[150px] text-[18px] font-bold text-[#212121] bg-white rounded-xl md:col-span-2 animate-pulse text-left">
+          <p class="leading-snug">
+            Why your business
+            <span class="block md:inline">Should consider</span>
+            <span class="block md:inline">Information management systems</span>
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Why section with bullet points -->
+ 
+      <!-- Contact button - opens modal -->
+      <div class="flex justify-center w-full md:col-span-2 mb-10">
+        <div class="flex flex-col w-[95%] shadow-md shadow-neutral-200/40 min-h-[65px] bg-neutral-50  rounded-2xl border-2 border-neutral-50 md:col-span-2 p-10 mt-10" onclick="OpenContactModal()" tabindex="0">
+           <img src="Images/Rectangle 811.svg" alt="Back" class="h-100px] w-[100px] object-contain mb-10 mt-4 items-left justify-left ml-2 " />
+          <p class=" mb-5 ml-2 text-[0.9rem] text-[#7F7F7F]">Monalisa Liabunya   - writer</p>
+          <button
+            type="button"
+            class="text-[13px] shadow-md shadow-neutral-200/60 w-full h-[65px] bg-neutral-100 text-[#BBBBBB] rounded-[15px] font-bold border-gray-50 flex-shrink-0 overflow-hidden transition-all duration-200 hover:scale-105 hover:bg-[#F9F9F9] active:scale-100 active:black"
+          >
+            About me
+          </button>
+        </div>
+      </div>
+
+      
+
+
+      <div class="flex justify-center w-full md:col-span-2 mt-5 mb-10 md:mt-10 md:mb-10">
+
+  <div id="sectionheader3"
+       class="w-[90%] min-h-[100px] text-[18px] font-bold text-[#212121] bg-white rounded-xl text-left">
+
+    <!-- One-line layout -->
+    <div id="brandintro"
+         class="flex items-center gap-3 w-full min-h-[20px] bg-white font-bold rounded-xl border-2 border-[#ffffff]">
+
+      <span>My Blog</span>
+
+<dotlottie-player src="https://lottie.host/2c74dbef-a174-4904-b433-3906acc33011/6sAjb6jK7Y.lottie" style="width: 30px;height: 30px" autoplay loop></dotlottie-player>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="flex justify-center w-full md:col-span-2 mt-5 mb-5 md:mt-10 md:mb-5">
+
+  <div id="sectionheader3"
+       class="w-[90%] min-h-[100px] text-[10px] font-semibold text-[#212121] bg-white rounded-xl text-left">
+
+    <!-- One-line layout -->
+    <div id="brandintro"
+         class="flex items-center gap-3 w-full min-h-[50px] bg-white font-semibold rounded-xl border-2 border-[#ffffff]">
+
+      <!-- Lottie FIRST -->
+      <img src="Images/fontisto_date.png" alt="Back" class="h-[20px] w-[20px] object-contain mb-5 mt-4 items-left justify-left " />
+
+      <!-- Date TEXT -->
+      <span class="text-sm text-[#757575] tracking-[0.12em]" id="currentDate"></span>
+
+    </div>
+
+  </div>
+ 
+</div>
+<script>
+  function getOrdinal(n) {
+    if (n > 3 && n < 21) return n + "th";
+    switch (n % 10) {
+      case 1: return n + "st";
+      case 2: return n + "nd";
+      case 3: return n + "rd";
+      default: return n + "th";
+    }
+  }
+
+  const today = new Date();
+
+  const day = getOrdinal(today.getDate());
+  const month = today.toLocaleString("en-US", { month: "long" });
+  const year = today.getFullYear();
+
+  document.getElementById("currentDate").textContent =
+    ` ${day} ${month} ${year} `;
+</script>
+
+      <div class="flex justify-center w-full md:col-span-2 mb-4">
+        <div id="services" class="flex flex-col w-[95%] p-5 bg-[#F5F5F5] rounded-xl md:col-span-2 shadow-sm">
+          <div class="flex items-center justify-between w-full mb-5">
+            <h2 class="font-semibold ml-2 text-[#4C4C4C]">THE QUESTION WE OFTEN FIND OURSELVES ASKING</h2>
+            <img src="Images/arcticons_notesnook.png" alt="Icon" class="w-[30px] h-[30px]" />
+          </div>
+          <p class="text-left mb-5 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#E0E0E0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+            By Monalisa Liabunya</p>
+            <p class="text-left md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              We all want to be free. We all want to be happy. We all want to feel in control of our minds. But the truth about the mind is this: sometimes, we feel out of control and detached from it. Not because we are afraid, but because parts of our subconscious rise into our conscious in ways we do not always understand.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              It is easy to believe that you have everything figured out. That you know your demons. That you are in control of your emotions and your feelings.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              But there is always that one moment that triggers a part of you you never knew existed. That moment can lead to alcohol or drug abuse. It can lead to self-sabotage. It can cause you to crash out, to shut down, to put your guard up. The list goes on. Then suddenly, you snap back to reality, and you have no idea why you reacted the way you did.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              It is easy to ignore it and move on.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              But how many of us actually sit down and ask ourselves:
+              Why is this happening to me?
+              Why am I like this?
+              Why did I go through that?
+              And if God exists, why did He allow it?
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              My favourite questions are these:
+              Why did I go through that?
+              And if God exists, why did He allow it?
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              I replay these questions like my favourite melodies. Not because I have the answers, but because they help me understand what it means to be human, and what it means to be an individual.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              The more I grow, the more I realize that everything that has happened to me was meant for something. Some may say that is a sad way to look at life. But I believe it is one of the most powerful ways to see it.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Life has a strange way of working itself out. It mirrors back to you in ways you never imagined.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              This is why one of my favourite teachings is when Jesus said, “Do not judge, or you too will be judged.” And, “Let the one who has never sinned cast the first stone.”
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              As a child, and even as someone still learning, I used to take these words lightly. I never understood their depth. Now I do. It is never wise to speak on what you do not understand, especially when it comes to someone’s life, their choices, or their way of living. You never truly know what options they have, what they are carrying, or what they are going through.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              I know that is a hard truth to accept, especially when we consider how we were raised and the beliefs we have held onto.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              If you are like me, someone raised in a Christian household and someone who believes in God, then you may understand this: everything happens for a reason. That reason may not make sense to us or to anyone else, but if God allowed it, then perhaps it serves a greater purpose for our good.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              We just have to believe that God is for us, and that life, in its own way, is also for us.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              The next time you find yourself asking, “Why me?” or “Why is God allowing this?” pause for a moment.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Look at everything you have overcome. Look at the times you felt lost, both in your conscious and subconscious, yet still found your way back to balance. Look at everything you have accomplished.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Then ask yourself: If I am not meant to be here, why am I still alive? Why is God, or the universe, allowing me to exist?
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Is it because I have not yet fulfilled my purpose? And if so, what is that purpose? Am I worthy of being alive?
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Do not let yourself believe that what is happening to you is simply unfair. Do not dwell on how people have treated you or perceived you. Instead, ask a different question: what is God, or the universe, trying to teach me?
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              And in that pursuit, do not forget to be grateful.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Be grateful for what you have. Be grateful for what you have been through. Be grateful for what you have lived and experienced.
+              </p>
+              
+              <p class="text-left mb-6 md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              The mistakes, the losses, the confusion, the pain. All of it.
+              </p>
+              
+              <p class="text-left md:text-justify ml-2 leading-7 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-full md:w-[80%] max-w-[65ch] hyphens-auto">
+              Because without everything, you would not have anything.
+              </p>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+      <!-- Contact button repeated for convenience -->
+      <div class="flex justify-center w-full md:col-span-2 mb-20">
+        <div class="flex flex-col w-[95%] items-left justify-left min-h-[65px] bg-white font-bold rounded-xl border-2 border-white md:col-span-2 mt-10" onclick="window.location.href=''" tabindex="0">
+          <button
+            type="button"
+            class="text-[0.8rem] font-bold shadow p-2 w-[40%] h-[60px] bg-gradient-to-r from-[#BC8B7C] to-[#432222] text-[#BC8B7C] rounded-[15px] border-1 border-[#543030] flex-shrink-0 overflow-hidden transition-all duration-200 hover:scale-105 hover:bg-[#F9F9F9] active:scale-100 active:black">
+            <!-- One-line layout -->
+    <div id="brandintro"
+    class="flex items-center justify-center gap-3  min-h-[20%]  font-bold rounded-xl">
+
+ <span>Buy me chocolate</span>
+
+ <img src="Images/emojione-monotone_chocolate-bar.svg" alt="Loading..." class="w-[6%] h-[6%]" />
+</div>
+            
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Splash screen to show loading -->
+  <div id="splash" class="fixed inset-0 z-50 flex items-center justify-center bg-white w-screen h-screen">
+    <div class="w-full h-full flex items-center justify-center" style="background-color: #ffffff;">
+      <img src="Images/Group 2(1).svg" alt="Loading..." class="w-120 h-120 animate-growPulse" />
+    </div>
+  </div>
+
+  <!-- Footer with copyright and powered by Firebase -->
+  <footer class="bg-black text-[#e0e0e0] shadow p-4 text-center flex-shrink-0">
+    Getting to know Monalisa Liabunya
+    <div class="flex justify-center items-center gap-1 mt-2">
+      <h4 id="pf">V 1 . 0  [2026]</h4>
+     
+    </div>
+    <div class="flex justify-center items-center gap-1 mt-2">
+      <a href="tel:265987265398">
+      <h4 id="pf">Developed by &nbsp;&nbsp;©&nbsp;bluedunkalotechnology&nbsp;&nbsp;</h4></a>
+      <img src="Images/Group 221.svg" alt="Firebase logo" class="w-[15px] h-[15px] mt-1" />
+    
+    </div>
+  </footer>
+
+  <!-- Contact Modal (hidden by default) -->
+  <div id="cModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center"> 
+    <div class="rounded-xl overflow-hidden p-5 shadow-xl w-[90%] max-w-md"> 
+      <!-- Top section (green area) --> 
+       <div class="bg-green-400 h-70 rounded-xl flex items-center justify-center"> 
+        <img src="Images/ML 1.jpg" alt="Header Image" class="w-full rounded-t-xl h-full object-cover"> 
+      </div> 
+      <!-- Bottom section (gray area) --> 
+      <div class=" rounded-b-xl bg-neutral-200 p-4 text-center"> 
+        <!-- Phone --> 
+         <div class="flex items-center justify-center mb-4 text-center"> 
+          <p class="text-center leading-2 tracking-[0.025em] text-xs text-[#7F7F7F] w-[90%] mb-2">
+             I am Monalisa Mariah Liabunya, a writer drawn to emotion, healing, and self-discovery. 
+             Through my words, I explore love, pain, and the complexity of being human. 
+            </p> 
+          
+          </div> 
+          <div class="flex items-center justify-center gap-5 min-h-[15px]  font-bold rounded-xl "> 
+            <a href="mailto:monalisaliabunya860@gmail.com" target="_blank">
+              <img src="Images/skill-icons_gmail-light.svg"
+                   class="w-7 h-7 cursor-pointer mx-auto hover:scale-110 transition">
+            </a> 
+            <a href="https://www.instagram.com/king_mona27?utm_source=qr&igsh=MXFvand3dHRhZGowNw==" target="_blank">
+              <img src="Images/skill-icons_instagram.svg"
+                   class="w-6 h-6 cursor-pointer mx-auto hover:scale-110 transition">
+            </a>
+            <a href="https://www.facebook.com/share/189uVQCgKb/?mibextid=wwXIfr" target="_blank">
+              <img src="Images/devicon_facebook.svg"
+                   class="w-6 h-6 cursor-pointer mx-auto hover:scale-110 transition">
+            </a>
+            <a href="https://wa.me/265883331716" target="_blank">
+              <img src="Images/logos_whatsapp-icon.svg"
+                   class="w-6 h-6 cursor-pointer mx-auto hover:scale-110 transition">
+            </a>
+            <a href="tel:265883331716" target="_blank">
+              <img src="Images/ion_call-sharp.svg"
+                   class="w-6 h-6 cursor-pointer mx-auto hover:scale-110 transition">
+            </a>
+             
+          </div> 
+
+          <img src="Images/lets-icons_close-ring-light.svg" 
+     onclick="CloseContactModal()" 
+     class="w-8 h-8 cursor-pointer mx-auto mt-10 hover:scale-110 transition"> 
+        </div> 
+      </div> 
+    </div>
+
+  <script>
+    // Open contact modal by removing 'hidden' and adding 'flex'
+    function OpenContactModal() {
+      const modal = document.getElementById("cModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    // Close contact modal by reversing class changes
+    function CloseContactModal() {
+      const modal = document.getElementById("cModal");
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
+    }
+  </script>
+
+  <script>
+    // Splash screen hides after page load with fade-out animation
+    window.addEventListener("load", () => {
+      const splash = document.getElementById("splash");
+      setTimeout(() => {
+        splash.classList.add("fade-out");
+        setTimeout(() => {
+          splash.style.display = "none";
+        }, 3000);
+      }, 2500);
+    });
+  </script>
+
+  <script src="SystemSCRIPTS.js"></script>
+
+  <script>
+    // Sticky navbar logic with overlap detection on scroll
+    const navbar = document.getElementById("navbar");
+    const whySection = document.getElementById("whysection");
+
+    window.addEventListener("scroll", () => {
+      const stickyPoint = 10;
+      const scrollY = window.scrollY;
+
+      const pastStickyPoint = scrollY > stickyPoint;
+
+      const navbarRect = navbar.getBoundingClientRect();
+      const whyRect = whySection.getBoundingClientRect();
+
+      const isOverlapping =
+        navbarRect.bottom > whyRect.top &&
+        navbarRect.top < whyRect.bottom;
+
+      navbar.classList.remove("sticky-active", "sticky-overlap");
+
+      if (isOverlapping) {
+        navbar.classList.add("sticky-overlap");
+      } else if (pastStickyPoint) {
+        navbar.classList.add("sticky-active");
+      }
+    });
+  </script>
+
+  <script>
+    // Rotating images for the portfolio section every 2.5 seconds
+    const imageElement = document.getElementById("rotatingImage");
+    const imageList = [
+      "Images/P1.png",
+      "Images/P2.png",
+      "Images/P3.png",
+      "Images/P4.png",
+      "Images/P5.png",
+    ];
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % imageList.length;
+      imageElement.src = imageList[currentIndex];
+    }, 2500);
+  </script>
+
+</body>
+</html>

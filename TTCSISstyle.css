@@ -1,6 +1,7 @@
 body{
      font-family: 'Poppins', sans-serif;
      background-color: #FFFFFF;
+     overscroll-behaviour:none;
 }
 
 .fade-out {
@@ -164,7 +165,7 @@ header{
 }
 
 #services{
-  border:#F5F5F5 solid 1px;
+  border:none;
 
 }
 

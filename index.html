@@ -506,7 +506,7 @@ button[type="submit"][name="loginbutton"]:active {
       <!-- Contact button repeated for convenience -->
       <div class="flex justify-center w-full md:col-span-2 mb-20">
         <div class="flex flex-col w-[100%] items-left justify-left min-h-[65px] bg-white font-bold rounded-xl border-2 border-white md:col-span-2 mt-10" onclick="window.location.href=''" tabindex="0">
-          <p class="text-justify text-[10px] md:text-justify ml-5 leading-5 text-[0.9rem] tracking-[0.01em] text-[#B0B0B0] w-[60%] md:w-[80%] max-w-[65ch] hyphens-auto">
+          <p class="text-justify text-[10px] md:text-justify ml-5 leading-5 text-[0.9rem] tracking-[0.01em] text-[##E0E0E0] w-[60%] md:w-[80%] max-w-[65ch] hyphens-auto">
              Hey, hope you had a good read and please contact me for anything. You can support and appreciate my write up with a tip below, Thank you for spending your time here!
               </p>
           <button
@@ -627,54 +627,11 @@ button[type="submit"][name="loginbutton"]:active {
     });
   </script>
 
-  <script src="SystemSCRIPTS.js"></script>
 
-  <script>
-    // Sticky navbar logic with overlap detection on scroll
-    const navbar = document.getElementById("navbar");
-    const whySection = document.getElementById("whysection");
 
-    window.addEventListener("scroll", () => {
-      const stickyPoint = 10;
-      const scrollY = window.scrollY;
+  
 
-      const pastStickyPoint = scrollY > stickyPoint;
-
-      const navbarRect = navbar.getBoundingClientRect();
-      const whyRect = whySection.getBoundingClientRect();
-
-      const isOverlapping =
-        navbarRect.bottom > whyRect.top &&
-        navbarRect.top < whyRect.bottom;
-
-      navbar.classList.remove("sticky-active", "sticky-overlap");
-
-      if (isOverlapping) {
-        navbar.classList.add("sticky-overlap");
-      } else if (pastStickyPoint) {
-        navbar.classList.add("sticky-active");
-      }
-    });
-  </script>
-
-  <script>
-    // Rotating images for the portfolio section every 2.5 seconds
-    const imageElement = document.getElementById("rotatingImage");
-    const imageList = [
-      "Images/P1.png",
-      "Images/P2.png",
-      "Images/P3.png",
-      "Images/P4.png",
-      "Images/P5.png",
-    ];
-
-    let currentIndex = 0;
-
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % imageList.length;
-      imageElement.src = imageList[currentIndex];
-    }, 2500);
-  </script>
+  
 
 </body>
 </html>
